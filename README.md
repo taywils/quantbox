@@ -16,9 +16,10 @@ Good thing you asked, below is the list. The main coverage areas are tools for C
 ### C++
 - [GCC version 4.9.1](https://gcc.gnu.org/)
 - [Valgrind version 3.10](http://valgrind.org/)
-- [QuantLib](http://quantlib.org/)
-- [Boost version 1.56](http://www.boost.org/)
-- [Eign version 3.2.2](http://eigen.tuxfamily.org/)
+- [Open MPI version 1.8](http://www.open-mpi.org/)
+- [Boost version 1.54](http://www.boost.org/)
+- [Eigen version 3](http://eigen.tuxfamily.org/)
+- [Blitz++](http://blitz.sourceforge.net/)
 
 ### Python
 - [Python 3.4](https://www.python.org/)
@@ -34,3 +35,4 @@ Good thing you asked, below is the list. The main coverage areas are tools for C
 - [SublimeText 3](http://www.sublimetext.com/3)
 - [R programming Language](http://www.r-project.org/)
 - [Eclipse IDE](https://www.eclipse.org)
+- [Java 8](https://www.oracle.com/java)

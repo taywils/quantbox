@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Wanna become a shell script'in greybeard?
+# Learn more about bash shell script
 # http://folk.ntnu.no/geirha/bashguide.pdf
 
 # Prevent console prompts for passwords and setting up home directories
@@ -28,6 +28,7 @@ sudo apt-get install gnuplot -y
 sudo apt-get install curl -y
 sudo apt-get install openssl -y
 sudo apt-get install nfs-kernel-server portmap -y
+sudo apt-get install cmake -y
 
 # Install Git
 echo "=> Installing Git"
@@ -45,5 +46,35 @@ sudo apt-get install gcc-4.9 g++-4.9 cpp-4.9 -y
 # Clean up old build-essentials versions of GCC and add sym link
 cd /usr/bin
 sudo rm gcc g++ cpp
-sudo ln -s /usr/bin/gcc-4.9 gcc
+sudo ln -s gcc-4.9 gcc
+sudo ln -s g++-4.9 g++
+sudo ln -s cpp-4.9 cpp
 cd ~
+
+# Install Valgrind
+echo "=> Installing Valgrind"
+sudo apt-get install valgrind -y
+
+# Install OpenMPI
+echo "=> Installing Open MPI"
+sudo wget https://www.open-mpi.org/software/ompi/v1.8/downloads/openmpi-1.8.1.tar.gz
+sudo apt-get install libibnetdisc-dev -y
+sudo tar -xvf openmpi-1.8.1.tar.gz
+cd openmpi-1.8.1
+sudo ./configure --prefix="/home/$USER/.openmpi"
+sudo make
+sudo make install
+export PATH="$PATH:/home/$USER/.openmpi/bin"
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/home/$USER/.openmpi/lib/"
+
+# Install Boost Libraries
+echo "=> Installing Boost Libraries"
+sudo apt-get install libboost-all-dev -y
+
+# Install Eigen3
+echo "=> Installing Eigen"
+sudo apt-get install libeigen3-dev -y
+
+# Install Blitz++
+echo "=> Installing Blitz++"
+sudo apt-get install libblitz-doc libblitz0-dev libblitz0ldbl -y
