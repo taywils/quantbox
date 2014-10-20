@@ -78,3 +78,11 @@ sudo apt-get install libeigen3-dev -y
 # Install Blitz++
 echo "=> Installing Blitz++"
 sudo apt-get install libblitz-doc libblitz0-dev libblitz0ldbl -y
+
+# Install QuantLib
+sudo wget http://pkgs.fedoraproject.org/repo/extras/QuantLib/QuantLib-1.4.tar.gz/3601f0180a0eae4a6c2686cade6ec04f/QuantLib-1.4.tar.gz
+sudo tar xvf QuantLib-1.4.tar.gz -C /usr/local/lib/
+cd /usr/local/lib/QuantLib-1.4/
+sudo ./configure
+sudo make
+sudo make install

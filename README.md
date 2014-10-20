@@ -20,9 +20,11 @@ Good thing you asked, below is the list. The main coverage areas are tools for C
 - [Boost version 1.54](http://www.boost.org/)
 - [Eigen version 3](http://eigen.tuxfamily.org/)
 - [Blitz++](http://blitz.sourceforge.net/)
+- [QuantLib 1.4](http://quantlib.org/index.shtml)
 
 ### Python
 - [Python 3.4](https://www.python.org/)
+- [Python 2.7.6](https://www.python.org/)
 - [Numpy 1.8](http://www.numpy.org/)
 - [Scipy 0.14](http://www.scipy.org/index.html)
 - [Pandas 0.15](http://pandas.pydata.org/)
