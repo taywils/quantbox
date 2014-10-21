@@ -80,9 +80,21 @@ echo "=> Installing Blitz++"
 sudo apt-get install libblitz-doc libblitz0-dev libblitz0ldbl -y
 
 # Install QuantLib
+echo "=> Installing QuantLib"
 sudo wget http://pkgs.fedoraproject.org/repo/extras/QuantLib/QuantLib-1.4.tar.gz/3601f0180a0eae4a6c2686cade6ec04f/QuantLib-1.4.tar.gz
 sudo tar xvf QuantLib-1.4.tar.gz -C /usr/local/lib/
 cd /usr/local/lib/QuantLib-1.4/
 sudo ./configure
 sudo make
 sudo make install
+cd ~
+
+# Prepare to install Python Tools
+echo "=> Installing Python Tools"
+sudo apt-get install build-essential python-dev -y
+# Numpy, SciPy, Cython, Pandas
+sudo apt-get install python-numpy -y
+sudo apt-get install cython -y
+sudo apt-get install python-scipy -y
+sudo apt-get install python-pip -y
+sudo pip install pandas
