@@ -98,3 +98,11 @@ sudo apt-get install cython -y
 sudo apt-get install python-scipy -y
 sudo apt-get install python-pip -y
 sudo pip install pandas
+
+# GNU Octave
+sudo add-apt-repository ppa:picaso/octave -y
+sudo apt-get update -y
+sudo apt-get install octave -y
+
+# R Programming Language
+sudo apt-get install r-base r-base-dev -y
