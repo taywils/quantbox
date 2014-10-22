@@ -100,9 +100,35 @@ sudo apt-get install python-pip -y
 sudo pip install pandas
 
 # GNU Octave
+echo "=> Installing GNU Octave"
 sudo add-apt-repository ppa:picaso/octave -y
 sudo apt-get update -y
 sudo apt-get install octave -y
 
 # R Programming Language
+echo "=> Installing R Programming Language"
 sudo apt-get install r-base r-base-dev -y
+
+# Sublime Text 3
+sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
+sudo apt-get update -y
+sudo apt-get install -y sublime-text-installer
+
+# Java 8
+echo "=> Installing Oracle Java 8"
+sudo add-apt-repository ppa:webupd8team/java -y
+sudo apt-get update -y
+# Automatically accept Oracle license agreement
+sudo echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
+sudo apt-get install oracle-java8-installer -y
+sudo apt-get install oracle-java8-set-default -y
+export JAVA_HOME=/usr/lib/jvm/java-8-oracle
+
+# Eclipse IDE CDT
+echo "=> Installing Eclipse Luna with CDT"
+cd /opt
+sudo wget http://ftp.osuosl.org/pub/eclipse/technology/epp/downloads/release/luna/SR1/eclipse-cpp-luna-SR1-linux-gtk-x86_64.tar.gz
+sudo tar -zxvf eclipse-cpp-luna-SR1-linux-gtk-x86_64.tar.gz
+sudo rm eclipse-cpp-luna-SR1-linux-gtk-x86_64.tar.gz
+sudo ln -s /opt/eclipse/eclipse /usr/local/bin/eclipse
+cd ~

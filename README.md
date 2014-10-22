@@ -36,5 +36,5 @@ Good thing you asked, below is the list. The main coverage areas are tools for C
 - [Octave](https://www.gnu.org/software/octave/)
 - [SublimeText 3](http://www.sublimetext.com/3)
 - [R programming Language](http://www.r-project.org/)
-- [Eclipse IDE](https://www.eclipse.org)
+- [Eclipse IDE version Luna](https://www.eclipse.org)
 - [Java 8](https://www.oracle.com/java)
