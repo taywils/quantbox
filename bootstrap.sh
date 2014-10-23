@@ -110,6 +110,7 @@ echo "=> Installing R Programming Language"
 sudo apt-get install r-base r-base-dev -y
 
 # Sublime Text 3
+echo "=> Installing Sublime Text 3"
 sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
 sudo apt-get update -y
 sudo apt-get install -y sublime-text-installer
@@ -132,3 +133,14 @@ sudo tar -zxvf eclipse-cpp-luna-SR1-linux-gtk-x86_64.tar.gz
 sudo rm eclipse-cpp-luna-SR1-linux-gtk-x86_64.tar.gz
 sudo ln -s /opt/eclipse/eclipse /usr/local/bin/eclipse
 cd ~
+
+# Install GUI
+# Currently using LXDE
+echo "=> Installing GUI"
+sudo apt-get install --no-install-recommends lubuntu-desktop -y
+
+# SageMath
+echo "=> Installing SageMath"
+sudo apt-add-repository -y ppa:aims/sagemath
+sudo apt-get update -y
+sudo apt-get install sagemath-upstream-binary -y

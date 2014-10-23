@@ -13,6 +13,9 @@ Good thing you asked, below is the list. The main coverage areas are tools for C
 ### Linux Version
 - [Ubuntu 14 LTS TrustyTahr](http://www.ubuntu.com/desktop/developers)
 
+### GUI
+- [LXDE Lightweight X11 Desktop Environment](http://lxde.org/)
+
 ### C++
 - [GCC version 4.9.1](https://gcc.gnu.org/)
 - [Valgrind version 3.10](http://valgrind.org/)
@@ -26,15 +29,15 @@ Good thing you asked, below is the list. The main coverage areas are tools for C
 - [Python 3.4](https://www.python.org/)
 - [Python 2.7.6](https://www.python.org/)
 - [Numpy 1.8](http://www.numpy.org/)
-- [Scipy 0.14](http://www.scipy.org/index.html)
-- [Pandas 0.15](http://pandas.pydata.org/)
-- [IPython 2.3](http://ipython.org/)
-- [SageMath 6.3](http://www.sagemath.org/)
+- [Scipy](http://www.scipy.org/index.html)
+- [Pandas](http://pandas.pydata.org/)
+- [IPython](http://ipython.org/)
+- [SageMath](http://www.sagemath.org/)
 
 ### General
 - [GnuPlot](http://www.gnuplot.info/)
 - [Octave](https://www.gnu.org/software/octave/)
 - [SublimeText 3](http://www.sublimetext.com/3)
 - [R programming Language](http://www.r-project.org/)
-- [Eclipse IDE version Luna](https://www.eclipse.org)
+- [Eclipse IDE CDT version Luna](https://www.eclipse.org)
 - [Java 8](https://www.oracle.com/java)
